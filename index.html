@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+		}
+		.container {
+			width: 80%;
+			margin: 0 10%;
+		}
+		#gameCanvas {
+			border: 2px solid black;
+			width: 80%;
+			margin: 0 10%;
+		}
+		#controls {
+			float: left;
+			margin-left: 25%;
+		}
+		#controls ul {
+			list-style: none;
+		}
+		.description {
+			float: right;
+			text-align: center;
+			margin-right: 25%;
+			margin-top: 3%;
+
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<canvas id="gameCanvas" width="800" height="600"></canvas>		
+	</div>
+	<div class="container">
+		<div id="controls">
+			<h2>Controls</h2>
+			<ul>
+				<li>Move Left: A</li>
+				<li>Move Right: D</li>
+				<li>Jump: W</li>
+				<li>Shoot: SPACE BAR</li>
+				<li>Shoot Shotgun: F</li>
+				<li>Shoot Nuke: R</li>
+				<li>Use Special: K</li>
+			</ul>
+		</div>
+		<div class="description">
+			<p>
+				This is my first game made with Javascript.<br>
+				It took about 3 days to build and was very fun to make.<br>
+				The gameplay was inspired by an old game called bubble blaster<br>
+				that I used to play online back in school over and over.
+			</p>			
+		</div>	
+	</div>
+	<script src="main.js"></script>
+	<script src="drawing.js"></script>
+	<script src="moving.js"></script>
+	<script src="constructors.js"></script>
+	<script src="progression.js"></script>
+	<script src="input.js"></script>
+	<script src="utility.js"></script>
+</body>
+</html>
